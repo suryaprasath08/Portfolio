@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya Prasath S | Portfolio</title>
+    <meta name="description" content="Personal portfolio of Surya Prasath S, Software Developer & AI & ML Engineer.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Glow Background Effects -->
+    <div class="glow-bg-orb orb-1"></div>
+    <div class="glow-bg-orb orb-2"></div>
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-accent">&lt;</span>Surya Prasath<span class="logo-accent">/&gt;</span>
+            </a>
+            
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education-certs" class="nav-link">Certifications</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-nav-toggle" aria-label="Toggle Navigation" id="mobileNavToggle">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+    <main>
+        <!-- Home / Hero Section -->
+        <section id="home" class="hero-section section-padding">
+            <div class="container grid-2">
+                <div class="hero-content scroll-reveal" data-reveal="left">
+                    <div class="badge">Available for Projects</div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Surya Prasath S</span><br>
+                        <span class="typing-text-wrapper"><span id="typing-text"></span><span class="cursor">|</span></span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        A driven Software Developer and AI & ML Engineer focused on building intelligent applications, database management, and automation.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image-container scroll-reveal" data-reveal="right">
+                    <div class="image-wrapper">
+                        <!-- Profile Avatar (will copy generated image here) -->
+                        <img src="profile_avatar.png" alt="Surya Prasath S Profile Avatar" class="profile-image" onerror="this.src='https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80'">
+                        <div class="glow-border"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <a href="#about" aria-label="Scroll Down">
+                    <div class="mouse-icon">
+                        <div class="wheel"></div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- About Me Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <p class="section-tagline">Getting to Know Me</p>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="grid-2 gap-4">
+                    <div class="about-info scroll-reveal" data-reveal="left">
+                        <h3>Passionate Developer & AI/ML Enthusiast</h3>
+                        <p>
+                            I'm a driven Software Developer and Computer Science student specializing in Artificial Intelligence and Machine Learning. With a strong foundation in Python, Java, MySQL, and web technologies, I focus on building intelligent, scalable, and automation-driven applications.
+                        </p>
+                        <p>
+                            I am knowledgeable in machine learning algorithms, database management, and modern agile development practices. I enjoy applying design thinking principles to translate complex problems into practical, real-world solutions that improve productivity and streamline operations.
+                        </p>
+                        <div class="about-details">
+                            <div class="detail-item">
+                                <i data-lucide="map-pin" class="detail-icon"></i>
+                                <span>Coimbatore, Tamil Nadu, India</span>
+                            </div>
+                            <div class="detail-item">
+                                <i data-lucide="graduation-cap" class="detail-icon"></i>
+                                <span>BE in CSE (AI & ML) Student</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-experience-cards scroll-reveal" data-reveal="right">
+                        <div class="exp-card">
+                            <div class="exp-card-header">
+                                <i data-lucide="brain" class="exp-icon"></i>
+                                <h4>AI & Machine Learning</h4>
+                            </div>
+                            <p>Focused on constructing intelligent algorithms, analyzing data, and applying NLP techniques to automate tasks.</p>
+                        </div>
+                        <div class="exp-card">
+                            <div class="exp-card-header">
+                                <i data-lucide="code-2" class="exp-icon"></i>
+                                <h4>Software Engineering</h4>
+                            </div>
+                            <p>Skilled in programming, writing readable object-oriented code, designing relational schemas, and developing web applications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <p class="section-tagline">My Capabilities</p>
+                    <h2 class="section-title">Technical & Professional Skills</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="skills-grid scroll-reveal">
+                    <!-- Programming Languages -->
+                    <div class="skill-card">
+                        <div class="skill-icon-wrapper code-color">
+                            <i data-lucide="code"></i>
+                        </div>
+                        <h3 class="skill-name">Programming Languages</h3>
+                        <p class="skill-desc">Python, Java</p>
+                    </div>
+                    <!-- Web Technologies -->
+                    <div class="skill-card">
+                        <div class="skill-icon-wrapper web-color">
+                            <i data-lucide="globe"></i>
+                        </div>
+                        <h3 class="skill-name">Web Technologies</h3>
+                        <p class="skill-desc">HTML5, CSS3, JavaScript</p>
+                    </div>
+                    <!-- Databases -->
+                    <div class="skill-card">
+                        <div class="skill-icon-wrapper db-color">
+                            <i data-lucide="database"></i>
+                        </div>
+                        <h3 class="skill-name">Databases</h3>
+                        <p class="skill-desc">MySQL, MongoDB (NoSQL)</p>
+                    </div>
+                    <!-- Concepts -->
+                    <div class="skill-card">
+                        <div class="skill-icon-wrapper concept-color">
+                            <i data-lucide="brain-circuit"></i>
+                        </div>
+                        <h3 class="skill-name">Core Concepts</h3>
+                        <p class="skill-desc">Machine Learning, Object-Oriented Programming (OOPS), Design Thinking</p>
+                    </div>
+                    <!-- Soft Skills -->
+                    <div class="skill-card">
+                        <div class="skill-icon-wrapper soft-color">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <h3 class="skill-name">Soft Skills</h3>
+                        <p class="skill-desc">Leadership, Communication, Creativity, and Team Collaboration</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <p class="section-tagline">What I've Built</p>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="projects-list">
+                    <!-- Project 1: Task Management System -->
+                    <div class="project-item scroll-reveal" data-reveal="left">
+                        <div class="project-media">
+                            <div class="mockup-screen">
+                                <div class="mockup-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="mockup-title">AI Task Manager Mockup</span>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="todo-mock-header">
+                                        <h4>AI Task Categorization</h4>
+                                        <span class="badge">4 Tasks Running</span>
+                                    </div>
+                                    <div class="todo-mock-list">
+                                        <div class="todo-mock-row completed">
+                                            <span class="checkbox checked"><i data-lucide="check"></i></span>
+                                            <span class="todo-text">Categorize task priorities using ML classification</span>
+                                        </div>
+                                        <div class="todo-mock-row">
+                                            <span class="checkbox"></span>
+                                            <span class="todo-text">Predict upcoming deadline warnings (NLP classifier)</span>
+                                        </div>
+                                        <div class="todo-mock-row">
+                                            <span class="checkbox"></span>
+                                            <span class="todo-text">Analyze database access efficiency (MySQL indexes)</span>
+                                        </div>
+                                        <div class="todo-mock-row">
+                                            <span class="checkbox"></span>
+                                            <span class="todo-text">Design Streamlit interactive dashboard UI</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-number">01</div>
+                            <h3 class="project-title">AI-Powered Intelligent Task Management System</h3>
+                            <p class="project-desc">
+                                An intelligent system that helps users organize, prioritize, and track tasks efficiently. It uses Machine Learning and Natural Language Processing (NLP) to categorize task descriptions, predict priority ranks, and manage deadlines automatically. Built with robust backend data structures and custom SQL tables to optimize data storage and access speeds.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Machine Learning</span>
+                                <span class="tech-tag">NLP</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Streamlit</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-link">
+                                    <span>Code Repository</span>
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2: Vehicle Recommendation System -->
+                    <div class="project-item scroll-reveal" data-reveal="right">
+                        <div class="project-media">
+                            <div class="mockup-screen">
+                                <div class="mockup-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="mockup-title">Smart Load Vehicle Recommender</span>
+                                </div>
+                                <div class="mockup-content panel-mock">
+                                    <div class="recommendation-mock">
+                                        <div class="search-box-mock">
+                                            <span class="label">Enter Payload Weight:</span>
+                                            <span class="input-placeholder">4500 kg</span>
+                                        </div>
+                                        <div class="result-list-mock">
+                                            <div class="result-item-mock selected">
+                                                <i data-lucide="truck" class="vehicle-icon"></i>
+                                                <div class="vehicle-details">
+                                                    <strong>Heavy Cargo Carrier X3</strong>
+                                                    <span>Capacity Match: 98% (Optimal)</span>
+                                                </div>
+                                            </div>
+                                            <div class="result-item-mock">
+                                                <i data-lucide="truck" class="vehicle-icon"></i>
+                                                <div class="vehicle-details">
+                                                    <strong>Medium Hauler M20</strong>
+                                                    <span>Capacity Match: 87% (Overloaded)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-number">02</div>
+                            <h3 class="project-title">Smart Load-Based Vehicle Recommendation System</h3>
+                            <p class="project-desc">
+                                A smart logistics solution that recommends optimal transit vehicles for cargo shipment based on load capacity, distance, and real-time vehicle availability. It leverages advanced database querying, filtering algorithms, and capacity optimization techniques to minimize manual matching errors and streamline dispatch processes.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5 / CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-link">
+                                    <span>Code Repository</span>
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Education & Certifications Section -->
+        <section id="education-certs" class="education-section section-padding">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <p class="section-tagline">My Academic Journey</p>
+                    <h2 class="section-title">Education & Certifications</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="grid-2 gap-4 align-start">
+                    <!-- Left Column: Education Timeline -->
+                    <div class="education-side scroll-reveal" data-reveal="left">
+                        <h3 class="subsection-title"><i data-lucide="graduation-cap"></i> Education</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">Sep 2023 - Present</div>
+                                <div class="timeline-content">
+                                    <h3>B.E. in Computer Science & Engineering (AI & ML)</h3>
+                                    <p class="institution">Rathinam Technical Campus, Coimbatore</p>
+                                    <p class="description">
+                                        CGPA: 7.5 / 10.0. Deepening knowledge in artificial intelligence, machine learning models, database management systems, data structures, algorithms, and agile methodologies.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">Jun 2022 - May 2023</div>
+                                <div class="timeline-content">
+                                    <h3>Higher Secondary Certificate (HSC)</h3>
+                                    <p class="institution">Model Higher Secondary School, Mulanur</p>
+                                    <p class="description">
+                                        Score: 75.6%. Foundational coursework in Computer Science, Mathematics, Physics, and Chemistry.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right Column: Certifications Grid -->
+                    <div class="certs-side scroll-reveal" data-reveal="right">
+                        <h3 class="subsection-title"><i data-lucide="award"></i> Certifications</h3>
+                        <div class="certs-grid">
+                            <div class="cert-card">
+                                <div class="cert-icon-wrapper">
+                                    <i data-lucide="shield-check"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <h4>Microsoft Certified: Fundamental AI Concepts</h4>
+                                    <p class="issuer">Microsoft</p>
+                                    <a href="#" class="cert-view-link" target="_blank" rel="noopener noreferrer">
+                                        <span>View Certificate</span>
+                                        <i data-lucide="external-link" style="width: 12px; height: 12px;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="cert-card">
+                                <div class="cert-icon-wrapper">
+                                    <i data-lucide="database"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <h4>MongoDB Basics</h4>
+                                    <p class="issuer">MongoDB University</p>
+                                    <a href="#" class="cert-view-link" target="_blank" rel="noopener noreferrer">
+                                        <span>View Certificate</span>
+                                        <i data-lucide="external-link" style="width: 12px; height: 12px;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="cert-card">
+                                <div class="cert-icon-wrapper">
+                                    <i data-lucide="lightbulb"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <h4>Design Thinking for Innovation</h4>
+                                    <p class="issuer">University of Virginia (Coursera)</p>
+                                    <a href="#" class="cert-view-link" target="_blank" rel="noopener noreferrer">
+                                        <span>View Certificate</span>
+                                        <i data-lucide="external-link" style="width: 12px; height: 12px;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Resume Section -->
+        <section id="resume" class="resume-section section-padding">
+            <div class="container">
+                <div class="resume-card scroll-reveal">
+                    <div class="resume-grid">
+                        <div class="resume-text-side">
+                            <div class="badge">Interactive Resume</div>
+                            <h2 class="resume-title">Interested in my full profile?</h2>
+                            <p class="resume-desc">
+                                Download my complete resume to view detailed academic qualifications, certifications, project workflows, and technical achievements.
+                            </p>
+                            <a href="#" class="btn btn-primary" id="downloadResumeBtn">
+                                <i data-lucide="download"></i>
+                                <span>Download Resume (PDF)</span>
+                            </a>
+                        </div>
+                        <div class="resume-visual-side">
+                            <div class="mock-document-icon">
+                                <i data-lucide="file-text" class="doc-icon"></i>
+                                <span class="doc-line line-1"></span>
+                                <span class="doc-line line-2"></span>
+                                <span class="doc-line line-3"></span>
+                                <span class="doc-pill">Surya_Prasath_S_Resume.pdf</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <p class="section-tagline">Get In Touch</p>
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="grid-2 gap-4">
+                    <!-- Contact Information -->
+                    <div class="contact-info scroll-reveal" data-reveal="left">
+                        <h3>Let's start a conversation</h3>
+                        <p class="contact-intro-text">
+                            Whether you have an interesting project idea, collaboration proposal, or just want to connect, feel free to drop a message or reach out. I will try my best to get back to you!
+                        </p>
+                        
+                        <div class="contact-methods">
+                            <!-- Email -->
+                            <div class="contact-card copyable" id="copyEmailCard" data-copy="suryaprasathsekar2005@gmail.com">
+                                <div class="contact-card-icon email-theme">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="contact-card-text">
+                                    <span class="label">Email Me</span>
+                                    <span class="value">suryaprasathsekar2005@gmail.com</span>
+                                </div>
+                                <button class="copy-btn" aria-label="Copy Email">
+                                    <i data-lucide="copy" class="btn-copy-icon"></i>
+                                </button>
+                                <span class="tooltip-text">Copy to clipboard</span>
+                            </div>
+                            <!-- Phone -->
+                            <div class="contact-card copyable" id="copyPhoneCard" data-copy="+919042761228">
+                                <div class="contact-card-icon phone-theme">
+                                    <i data-lucide="phone"></i>
+                                </div>
+                                <div class="contact-card-text">
+                                    <span class="label">Call Me</span>
+                                    <span class="value">+91 9042761228</span>
+                                </div>
+                                <button class="copy-btn" aria-label="Copy Phone">
+                                    <i data-lucide="copy" class="btn-copy-icon"></i>
+                                </button>
+                                <span class="tooltip-text">Copy to clipboard</span>
+                            </div>
+                            <!-- LinkedIn -->
+                            <a href="https://linkedin.com/in/surya-prasath0811" target="_blank" rel="noopener noreferrer" class="contact-card linkedin-theme">
+                                <div class="contact-card-icon linkedin-theme-bg">
+                                    <i data-lucide="linkedin"></i>
+                                </div>
+                                <div class="contact-card-text">
+                                    <span class="label">Connect on LinkedIn</span>
+                                    <span class="value">linkedin.com/in/surya-prasath0811</span>
+                                </div>
+                                <span class="link-arrow"><i data-lucide="arrow-up-right"></i></span>
+                            </a>
+                            <!-- GitHub -->
+                            <a href="https://github.com/suryaprasath08" target="_blank" rel="noopener noreferrer" class="contact-card github-theme">
+                                <div class="contact-card-icon github-theme-bg">
+                                    <i data-lucide="github"></i>
+                                </div>
+                                <div class="contact-card-text">
+                                    <span class="label">Follow on GitHub</span>
+                                    <span class="value">github.com/suryaprasath08</span>
+                                </div>
+                                <span class="link-arrow"><i data-lucide="arrow-up-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Contact Form -->
+                    <div class="contact-form-container scroll-reveal" data-reveal="right">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="form_name">Full Name</label>
+                                <input type="text" id="form_name" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form_email">Email Address</label>
+                                <input type="email" id="form_email" name="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form_message">Message</label>
+                                <textarea id="form_message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span>Send Message</span>
+                                <i data-lucide="send"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="copyright">&copy; 2026 Surya Prasath S. Built with HTML, CSS, and Vanilla JavaScript.</p>
+            <div class="social-footer">
+                <a href="https://github.com/suryaprasath08" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i data-lucide="github"></i></a>
+                <a href="https://linkedin.com/in/surya-prasath0811" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="mailto:suryaprasathsekar2005@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Toast Notification for success feedback -->
+    <div id="toast" class="toast">
+        <i data-lucide="check-circle" class="toast-icon"></i>
+        <span id="toast-message">Message sent successfully!</span>
+    </div>
+    <!-- Lucide Icons Library -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
