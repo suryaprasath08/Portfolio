@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Dynamic Typing Text Animation ---
     const typingTextElement = document.getElementById('typing-text');
-    const roles = ["Software Developer", "AI & ML Engineer"];
+    const roles = ["Software Developer"];
     let roleIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -229,26 +229,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Mock Resume Download Helper ---
-    const downloadResumeBtn = document.getElementById('downloadResumeBtn');
-    
-    if (downloadResumeBtn) {
-        downloadResumeBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            
-            showToast("Generating and downloading CV...");
-            
-            // Create a fake/mock PDF data block
-            setTimeout(() => {
-                const link = document.createElement('a');
-                link.href = 'data:application/pdf;base64,JVBERi0xLjQKJdPr6eEKMSAwIG9iagogIDw8IC9UeXBlIC9DYXRhbG9nCiAgICAgL1BhZ2VzIDIgMCBSCiAgPj4KZW5kb2JqCjIgMCBvYmoKICA8PCAvVHlwZSAvUGFnZXMKICAgICAvS2lkcyBbIDMgMCBSIF0KICAgICAvQ291bnQgMQogID4+CmVuZG9iagozIDAgb2JqCiAgPDwgL1R5cGUgL1BhZ2UKICAgICAvUGFyZW50IDIgMCBSCiAgICAgL01lZGlhQm94IFsgMCAwIDU5NSA4NDIgXQogICAgIC9Db250ZW50cyA0IDAgUgogICAgIC9SZXNvdXJjZXMgPDwgL0ZvbnQgPDwgL0YxIDUgMCBSID4+ID4+CiAgPj4KZW5kb2JqCjQgMCBvYmoKICA8PCAvTGVuZ3RoIDY1ID4+CnN0cmVhbQpCVAovRjEgMjQgVGYKNTAgNzAwIFRkCihTdXJ5YSdzIFJlc3VtZSAtIFBsYWNlaG9sZGVyKSBUagpFVAplbmRzdHJlYW0KZW5kb2JqCjUgMCBvYmoKICA8PCAvVHlwZSAvRm9udAogICAgIC9TdWJ0eXBlIC9UeXBlMQogICAgIC9CYXNlRm9udCAvSGVsdmV0aWNhCiAgPj4KZW5kb2JqCnhyZWYKMCA2CjAwMDAwMDAwMDAgNjU1MzUgZiAKMDAwMDAwMDAxNSAwMDAwMCBuIAowMDAwMDAwMDgwIDAwMDAwIG4gCjAwMDAwMDAxNDUgMA==';
-                link.download = 'Surya_Prasath_S_Resume.pdf';
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-                
-                showToast("Resume downloaded successfully!");
-            }, 1000);
-        });
-    }
 });
