@@ -85,7 +85,7 @@
                 </div>
                 <div class="grid-2 gap-4">
                     <div class="about-info scroll-reveal" data-reveal="left">
-                        <h3>Passionate Developer & AI/ML Enthusiast</h3>
+                        <h3>Passionate Developer</h3>
                         <p>
                             I'm a driven Software Developer and Computer Science student specializing in Artificial Intelligence and Machine Learning. With a strong foundation in Python, Java, MySQL, and web technologies, I focus on building intelligent, scalable, and automation-driven applications.
                         </p>
@@ -138,7 +138,7 @@
                             <i data-lucide="globe"></i>
                         </div>
                         <h3 class="skill-name">Web Technologies</h3>
-                        <p class="skill-desc">HTML5, CSS3, JavaScript</p>
+                        <p class="skill-desc">HTML, CSS, JavaScript</p>
                     </div>
                     <!-- Databases -->
                     <div class="skill-card">
@@ -162,7 +162,7 @@
                             <i data-lucide="users"></i>
                         </div>
                         <h3 class="skill-name">Soft Skills</h3>
-                        <p class="skill-desc">Leadership, Communication, Creativity, and Team Collaboration</p>
+                        <p class="skill-desc">Communication, Creativity, and Team Collaboration</p>
                     </div>
                 </div>
             </div>
@@ -178,6 +178,40 @@
                 <div class="projects-list">
                     <!-- Project 1: Task Management System -->
                     <div class="project-item scroll-reveal" data-reveal="left">
+                        <div class="project-media">
+                            <div class="mockup-screen">
+                                <div class="mockup-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="mockup-title">AI Task Priority Predictor</span>
+                                </div>
+                                <div class="mockup-content panel-mock">
+                                    <div class="recommendation-mock">
+                                        <div class="search-box-mock">
+                                            <span class="label">Enter Task Description:</span>
+                                            <span class="input-placeholder">Deploy database updates at 10 PM</span>
+                                        </div>
+                                        <div class="result-list-mock">
+                                            <div class="result-item-mock selected">
+                                                <i data-lucide="brain" class="task-icon"></i>
+                                                <div class="vehicle-details">
+                                                    <strong>Priority: High</strong>
+                                                    <span>Confidence: 94% (ML Classification)</span>
+                                                </div>
+                                            </div>
+                                            <div class="result-item-mock">
+                                                <i data-lucide="clock" class="task-icon"></i>
+                                                <div class="vehicle-details">
+                                                    <strong>Deadline Warning</strong>
+                                                    <span>Action Required: Urgent</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="project-info">
                             <div class="project-number">01</div>
                             <h3 class="project-title">AI-Powered Intelligent Task Management System</h3>
@@ -306,10 +340,6 @@
                                 <div class="cert-info">
                                     <h4>Microsoft Certified: Fundamental AI Concepts</h4>
                                     <p class="issuer">Microsoft</p>
-                                    <a href="#" class="cert-view-link" target="_blank" rel="noopener noreferrer">
-                                        <span>View Certificate</span>
-                                        <i data-lucide="external-link" style="width: 12px; height: 12px;"></i>
-                                    </a>
                                 </div>
                             </div>
                             <div class="cert-card">
@@ -319,10 +349,6 @@
                                 <div class="cert-info">
                                     <h4>MongoDB Basics</h4>
                                     <p class="issuer">MongoDB University</p>
-                                    <a href="#" class="cert-view-link" target="_blank" rel="noopener noreferrer">
-                                        <span>View Certificate</span>
-                                        <i data-lucide="external-link" style="width: 12px; height: 12px;"></i>
-                                    </a>
                                 </div>
                             </div>
                             <div class="cert-card">
@@ -332,10 +358,6 @@
                                 <div class="cert-info">
                                     <h4>Design Thinking for Innovation</h4>
                                     <p class="issuer">University of Virginia (Coursera)</p>
-                                    <a href="#" class="cert-view-link" target="_blank" rel="noopener noreferrer">
-                                        <span>View Certificate</span>
-                                        <i data-lucide="external-link" style="width: 12px; height: 12px;"></i>
-                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -354,9 +376,9 @@
                             <p class="resume-desc">
                                 Download my complete resume to view detailed academic qualifications, certifications, project workflows, and technical achievements.
                             </p>
-                            <a href="#" class="btn btn-primary" id="downloadResumeBtn">
-                                <i data-lucide="download"></i>
-                                <span>Download Resume (PDF)</span>
+                            <a href="resume.pdf" target="_blank" class="btn btn-primary" id="downloadResumeBtn">
+                                <i data-lucide="file-text"></i>
+                                <span>View Resume</span>
                             </a>
                         </div>
                         <div class="resume-visual-side">
@@ -399,20 +421,6 @@
                                     <span class="value">suryaprasathsekar2005@gmail.com</span>
                                 </div>
                                 <button class="copy-btn" aria-label="Copy Email">
-                                    <i data-lucide="copy" class="btn-copy-icon"></i>
-                                </button>
-                                <span class="tooltip-text">Copy to clipboard</span>
-                            </div>
-                            <!-- Phone -->
-                            <div class="contact-card copyable" id="copyPhoneCard" data-copy="+919042761228">
-                                <div class="contact-card-icon phone-theme">
-                                    <i data-lucide="phone"></i>
-                                </div>
-                                <div class="contact-card-text">
-                                    <span class="label">Call Me</span>
-                                    <span class="value">+91 9042761228</span>
-                                </div>
-                                <button class="copy-btn" aria-label="Copy Phone">
                                     <i data-lucide="copy" class="btn-copy-icon"></i>
                                 </button>
                                 <span class="tooltip-text">Copy to clipboard</span>
