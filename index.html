@@ -19,7 +19,10 @@
     <!-- Header Navigation -->
     <header class="header">
         <div class="nav-container">
-                       
+            <a href="#home" class="logo">
+                <span class="logo-accent">&lt;</span>Surya Prasath<span class="logo-accent">/&gt;</span>
+            </a>
+            
             <nav class="navbar" id="navbar">
                 <ul class="nav-links">
                     <li><a href="#home" class="nav-link active">Home</a></li>
@@ -46,7 +49,7 @@
                         <span class="typing-text-wrapper"><span id="typing-text"></span><span class="cursor">|</span></span>
                     </h1>
                     <p class="hero-subtitle">
-                        A driven Software Developer  focused on building intelligent applications, database management, and automation.
+                        A driven Software Developer focused on building intelligent applications, database management, and automation.
                     </p>
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary">
@@ -81,7 +84,9 @@
                     <div class="section-underline"></div>
                 </div>
                 <div class="grid-2 gap-4">
-                  
+                    <div class="about-info scroll-reveal" data-reveal="left">
+                        <h3>Passionate Developer & AI/ML Enthusiast</h3>
+                        <p>
                             I'm a driven Software Developer and Computer Science student specializing in Artificial Intelligence and Machine Learning. With a strong foundation in Python, Java, MySQL, and web technologies, I focus on building intelligent, scalable, and automation-driven applications.
                         </p>
                         <p>
@@ -102,11 +107,9 @@
                         <div class="exp-card">
                             <div class="exp-card-header">
                                 <i data-lucide="code-2" class="exp-icon"></i>
-                              <p> 
-                                  <h4>Software Engineering</h4>
+                                <h4>Software Engineering</h4>
                             </div>
                             <p>Skilled in programming, writing readable object-oriented code, designing relational schemas, and developing web applications.</p>
-                        </p>
                         </div>
                     </div>
                 </div>
@@ -135,7 +138,7 @@
                             <i data-lucide="globe"></i>
                         </div>
                         <h3 class="skill-name">Web Technologies</h3>
-                        <p class="skill-desc">HTML, CSS, JavaScript</p>
+                        <p class="skill-desc">HTML5, CSS3, JavaScript</p>
                     </div>
                     <!-- Databases -->
                     <div class="skill-card">
@@ -151,7 +154,7 @@
                             <i data-lucide="brain-circuit"></i>
                         </div>
                         <h3 class="skill-name">Core Concepts</h3>
-                        <p class="skill-desc">Machine Learning, Object-Oriented Programming (OOPS)</p>
+                        <p class="skill-desc">Machine Learning, Object-Oriented Programming (OOPS), Design Thinking</p>
                     </div>
                     <!-- Soft Skills -->
                     <div class="skill-card">
@@ -175,38 +178,6 @@
                 <div class="projects-list">
                     <!-- Project 1: Task Management System -->
                     <div class="project-item scroll-reveal" data-reveal="left">
-                        <div class="project-media">
-                            <div class="mockup-screen">
-                                <div class="mockup-header">
-                                    <span class="dot dot-red"></span>
-                                    <span class="dot dot-yellow"></span>
-                                    <span class="dot dot-green"></span>
-                                    <span class="mockup-title">AI Task Manager Mockup</span>
-                                </div>
-                                <div class="mockup-content">
-                                    <div class="todo-mock-header">
-                                       
-                                    <div class="todo-mock-list">
-                                        <div class="todo-mock-row completed">
-                                            <span class="checkbox checked"><i data-lucide="check"></i></span>
-                                            <span class="todo-text">Categorize task priorities using ML classification</span>
-                                        </div>
-                                        <div class="todo-mock-row">
-                                            <span class="checkbox"></span>
-                                            <span class="todo-text">Predict upcoming deadline warnings (NLP classifier)</span>
-                                        </div>
-                                        <div class="todo-mock-row">
-                                            <span class="checkbox"></span>
-                                            <span class="todo-text">Analyze database access efficiency (MySQL indexes)</span>
-                                        </div>
-                                        <div class="todo-mock-row">
-                                            <span class="checkbox"></span>
-                                            <span class="todo-text">Design Streamlit interactive dashboard UI</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="project-info">
                             <div class="project-number">01</div>
                             <h3 class="project-title">AI-Powered Intelligent Task Management System</h3>
@@ -335,7 +306,11 @@
                                 <div class="cert-info">
                                     <h4>Microsoft Certified: Fundamental AI Concepts</h4>
                                     <p class="issuer">Microsoft</p>
-                                   
+                                    <a href="#" class="cert-view-link" target="_blank" rel="noopener noreferrer">
+                                        <span>View Certificate</span>
+                                        <i data-lucide="external-link" style="width: 12px; height: 12px;"></i>
+                                    </a>
+                                </div>
                             </div>
                             <div class="cert-card">
                                 <div class="cert-icon-wrapper">
@@ -344,7 +319,10 @@
                                 <div class="cert-info">
                                     <h4>MongoDB Basics</h4>
                                     <p class="issuer">MongoDB University</p>
-                                    
+                                    <a href="#" class="cert-view-link" target="_blank" rel="noopener noreferrer">
+                                        <span>View Certificate</span>
+                                        <i data-lucide="external-link" style="width: 12px; height: 12px;"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div class="cert-card">
@@ -354,7 +332,10 @@
                                 <div class="cert-info">
                                     <h4>Design Thinking for Innovation</h4>
                                     <p class="issuer">University of Virginia (Coursera)</p>
-                                    
+                                    <a href="#" class="cert-view-link" target="_blank" rel="noopener noreferrer">
+                                        <span>View Certificate</span>
+                                        <i data-lucide="external-link" style="width: 12px; height: 12px;"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -373,9 +354,9 @@
                             <p class="resume-desc">
                                 Download my complete resume to view detailed academic qualifications, certifications, project workflows, and technical achievements.
                             </p>
-                           <a href="resume.pdf" target="_blank" class="btn btn-primary">
+                            <a href="#" class="btn btn-primary" id="downloadResumeBtn">
                                 <i data-lucide="download"></i>
-                                <span>View Resume</span>
+                                <span>Download Resume (PDF)</span>
                             </a>
                         </div>
                         <div class="resume-visual-side">
@@ -423,7 +404,19 @@
                                 <span class="tooltip-text">Copy to clipboard</span>
                             </div>
                             <!-- Phone -->
-                          
+                            <div class="contact-card copyable" id="copyPhoneCard" data-copy="+919042761228">
+                                <div class="contact-card-icon phone-theme">
+                                    <i data-lucide="phone"></i>
+                                </div>
+                                <div class="contact-card-text">
+                                    <span class="label">Call Me</span>
+                                    <span class="value">+91 9042761228</span>
+                                </div>
+                                <button class="copy-btn" aria-label="Copy Phone">
+                                    <i data-lucide="copy" class="btn-copy-icon"></i>
+                                </button>
+                                <span class="tooltip-text">Copy to clipboard</span>
+                            </div>
                             <!-- LinkedIn -->
                             <a href="https://linkedin.com/in/surya-prasath0811" target="_blank" rel="noopener noreferrer" class="contact-card linkedin-theme">
                                 <div class="contact-card-icon linkedin-theme-bg">
